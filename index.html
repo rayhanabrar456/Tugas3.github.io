@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <style>
+            .container{
+                background-color: blue;
+            }
+            input[type="button"]{
+                background-color: firebrick;
+                width: 30px; 
+                height:30px;
+            }
+        </style>
+    <h2>Selamat Datang Di Calculator</h2>
+    <br>
+    <h3>Masukkan angka</h3>
+    <label for="">Angka 1</label>
+    <input type="text" id="angka1">
+    <br>
+    <br>
+    <laber for="">Angka 2</laber>
+    <input type="text" id="angka2">
+    <br>
+    <br>
+    <label for="">Hasil</label>
+    <input type="text" id="hasil">
+    <br>
+    <br>
+    <div class="button">
+
+  <input type="button"  onclick="ftambah()"value="+"></button>
+  <input type="button"  onclick="fkurang()"value="-"></button>
+  <input type="button" onclick="fkali()"value="*"></button>
+  <input type="button" onclick="fbagi()"value="/"></button>
+    </div>
+</div>
+
+    <script>
+        var angka1 = document.getElementById("angka1");
+        var angka2 = document.getElementById("angka2");
+        var hasil = document.getElementById("hasil");
+
+        function ftambah(){
+            hasil.value = Number(angka1.value) +Number( angka2.value);
+        }
+
+        function fkurang(){
+            hasil.value = Number(angka1.value) - Number( angka2.value);
+        }
+
+        function fkali(){
+            hasil.value = Number(angka1.value) * Number( angka2.value);
+        }
+
+        function fbagi(){
+            hasil.value = Number(angka1.value) / Number( angka2.value);
+        }
+
+
+    
+    </script>
+
+
+
+
+    </form>
+</body>
+</html>
